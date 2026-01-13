@@ -1,0 +1,21 @@
+@media only screen and (min-width: 600px) {
+
+    // Variable overrides first
+    $enable-shadows: true;
+    $primary: rgb(38, 174, 228);
+    $light-emphasis: white;
+    $prefix: "mo-";
+
+    // Then import Bootstrap
+    @import "../node_modules/bootstrap/scss/bootstrap";
+    
+    // Setting hover behaviour for top row stat modules
+    .tickets:hover {
+        background-color: red;
+    }
+
+    .icon-link:hover {
+        color: lightblue;
+    }
+
+} 

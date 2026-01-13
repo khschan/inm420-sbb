@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 6 - Headless CMS</title>
+    <link rel="stylesheet" href="/assets/css/stylesheet.css">
+</head>
+
+<body>
+<div class="container-fluid row">
+
+    <!-- Sidebar -->
+    <nav id="sidebar" class="container-fluid col-3 col-lg-2 bg-dark text-light-emphasis fw-medium"></nav>
+
+    <!-- Main Content -->
+    <main class="container-fluid col-9 col-lg-10 bg-light text-dark">
+
+        <!-- Header -->
+        <header class="container row-cols-9 d-flex justify-content-evenly align-items-center pb-3">
+            <h2 id="header-title" class="container col-md-6 text-start"></h2>
+
+            <nav class="container col-md-1 row-cols-2 d-flex">
+                <a class="p-4"><img src="./assets/images/icons/search.svg"></a>
+                <a class="p-4"><img src="./assets/images/icons/notification.svg"></a>
+            </nav>
+
+            <nav class="container col-md-3 d-flex justify-content-end text-end border-start">
+                <a id="header-user" class="row text-decoration-none text-reset fw-semibold"></a>
+            </nav>
+        </header>
+
+        <!-- Overview Counters -->
+        <article id="overview-counters" class="row row-cols-9 pb-3 fw-semibold"></article>
+
+        <!-- Trends Section -->
+        <article class="container g-0 row justify-content-center border border-2 rounded border-light-subtle bg-body">
+            <section class="col-md-9 p-3">
+                <h5 class="fw-semibold">Today's trends</h5>
+                <p><small id="trend-date"></small></p>
+                <figure class="row">
+                    <img id="trend-img" class="img-fluid" alt="Trends graph">
+                </figure>
+            </section>
+
+            <section id="stats" class="col-md-3 text-center"></section>
+        </article>
+
+        <!-- Tickets & Tasks -->
+        <article class="row row-cols-9 fw-semibold">
+            <section class="container-fluid col-md m-2 text-left bg-primary-subtle rounded">
+                <h5 class="text-dark" id="tickets-header">Unresolved tickets</h5>
+                <p class="col text-body-secondary" id="tickets-subhead"><small>View details</small></p>
+                <section class="row row-cols-auto justify-content-start">
+                    <p class="col text-body-secondary"><small>Group: Support</small></p>
+                </section>
+                <section id="tickets-list"></section>
+            </section>
+
+            <section class="container-fluid col-md m-2 text-left bg-primary-subtle rounded">
+                <h5 class="text-dark" id="tasks-header">Tasks</h5>
+                <p class="col text-body-secondary" id="tasks-subhead"><small>View all</small></p>
+                <section class="row row-cols-auto justify-content-start">
+                    <p class="col text-light-emphasis"><small>Today</small></p>
+                </section>
+                <section id="tasks-list"></section>
+            </section>
+        </article>
+
+    </main>
+</div>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
