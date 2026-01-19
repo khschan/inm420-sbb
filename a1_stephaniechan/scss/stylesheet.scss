@@ -9,13 +9,4 @@
     // Then import Bootstrap
     @import "../node_modules/bootstrap/scss/bootstrap";
     
-    // Setting hover behaviour for top row stat modules
-    .tickets:hover {
-        background-color: red;
-    }
-
-    .icon-link:hover {
-        color: lightblue;
-    }
-
 } 

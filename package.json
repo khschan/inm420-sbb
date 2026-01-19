@@ -1,0 +1,29 @@
+{
+  "name": "inm420-sbb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server --BaseDir=\"public\"",
+    "watch": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run watch\" \"npm run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khschan/inm420-sbb.git"
+  },
+  "keywords": [],
+  "author": "Stephanie Chan",
+  "license": "private",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/khschan/inm420-sbb/issues"
+  },
+  "homepage": "https://github.com/khschan/inm420-sbb#readme",
+  "description": "",
+  "devDependencies": {
+    "bootstrap": "^5.3.8",
+    "concurrently": "^9.2.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.97.2"
+  }
+}
