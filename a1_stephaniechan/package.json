@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "lite-server --BaseDir=\"public\""
+    "start": "lite-server --BaseDir=\"public\""
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,8 @@
   "description": "",
   "devDependencies": {
     "bootstrap": "^5.3.8",
-    "lite-server": "^2.6.1"
+    "concurrently": "^9.2.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.97.2"
   }
 }
