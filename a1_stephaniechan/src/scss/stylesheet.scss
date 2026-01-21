@@ -1,0 +1,128 @@
+/* GENERAL */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+$enable-grid-classes: false;
+$enable-cssgrid: true;
+$enable-shadows: true;
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+}
+
+.nav-item {
+    color: #6C5CE7;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.text-highlight {
+  background: #d7f5ec;
+  color: #0f9d82;
+  padding: 0 6px;
+  border-radius: 6px;
+}
+
+/* HERO GRID */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 14px;
+  grid-row-gap: 14px;
+}
+
+/* GRID AREAS */
+.grid1{
+    grid-area: 1 / 1 / 3 / 3;
+    background-color: grey;
+    border-radius: 16px;
+}
+
+.grid2{
+    grid-area: 10 / 1 / 11 / 3;
+    background-color: yellow;
+    border-radius: 16px;
+}
+
+.grid3{
+    grid-area: 3 / 1 / 10 / 3;
+    background-color: yellowgreen;
+    border-radius: 16px;
+}
+
+.grid4{
+    grid-area: 1 / 3 / 7 / 6;
+    background-color: lightblue;
+    border-radius: 16px;
+}
+
+.grid5{
+    grid-area:  7 / 3 / 11 / 5;
+    background-color: lightpink;
+    border-radius: 16px;
+}
+
+.grid6{
+    grid-area:  7 / 5 / 12 / 7;
+    background-color: lavender;
+    border-radius: 16px;
+}
+
+.grid7{
+    grid-area: 4 / 6 / 7 / 7;
+    background-color: coral;
+    border-radius: 16px;
+}
+
+.grid8{
+    grid-area: 4 / 7 / 7 / 8;
+    background-color: teal;
+    border-radius: 16px;
+}
+
+.grid9{
+    grid-area: 7 / 7 / 10 / 8;
+    background-color: lightsalmon;
+    border-radius: 16px;
+}
+
+.grid10{
+    grid-area: 2 / 6 / 4 / 8;
+    background-color: palevioletred;
+    border-radius: 16px;
+}
+
+/* PRICING */
+.pricing-card {
+  border-radius: 16px;
+  padding: 24px;
+  height: 100%;
+}
+
+.pricing-card ul li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.pricing-card.featured {
+  transform: scale(1.02);
+}
+
+/* FOOTER */
+.footer-section {
+  background: #fafafa;
+}
+
+/* RESPONSIVE TWEAKS */
+@media (min-width: 768px) {
+  .grid-item {
+    min-height: 120px;
+  }
+}
