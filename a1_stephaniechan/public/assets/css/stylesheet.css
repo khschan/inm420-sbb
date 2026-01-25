@@ -1,18 +1,21 @@
-/* GENERAL */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
+  background-image: url("/assets/images/dots.svg");
+  background-position: top right;
+  background-size: 300px auto;
+  background-repeat: no-repeat;
 }
 
 #bg-img {
   position: absolute;
-  background-color: #FFEAA7;
+  background-color: #ffeaa7;
   opacity: 0.5;
-  transform: translateX(47%) translateY(-55%) rotate(-45deg);
+  transform: translateX(43vw) translateY(-45vh) rotate(-45deg);
   border-radius: 99px;
-  width: 1376px;
-  height: 768px;
+  width: 1200px;
+  height: 750px;
   z-index: -1;
 }
 
@@ -21,22 +24,42 @@ body {
   top: 0;
 }
 
-.nav-item {
-  color: #6C5CE7;
+.nav-link {
+  color: #6c5ce7;
 }
 
-.nav-item:hover {
+.nav-link:hover {
   text-decoration: underline;
+}
+
+.nav-active {
+  font-weight: bolder;
+  text-decoration: none;
+  line-height: 250%;
+  color: black;
+}
+
+.nav-breaker {
+  color: #fdcb6e;
+  line-height: 250%;
+}
+
+#signin-button {
+  font-weight: bolder;
+  line-height: 24px;
+  text-align: center;
+  height: 50px;
+  width: 130px;
+  border-radius: 25px;
 }
 
 .text-highlight {
   background: #d7f5ec;
-  color: #0f9d82;
+  color: #00B894;
   padding: 0 6px;
   border-radius: 6px;
 }
 
-/* HERO GRID */
 .hero-section {
   width: 100vw;
   height: 70vh;
@@ -53,7 +76,6 @@ body {
   margin-bottom: 2vh;
 }
 
-/* GRID AREAS */
 .grid1 {
   grid-area: 1/1/3/3;
   height: 80px;
@@ -73,13 +95,13 @@ body {
   width: 100%;
   height: 50px;
   border-radius: 25px;
-  color: #6C5CE7;
+  color: #6c5ce7;
   align-items: center;
 }
 
 .grid3 {
   grid-area: 3/1/10/3;
-  background-color: #FDCB6E;
+  background-color: #fdcb6e;
   border-radius: 16px;
   height: 100%;
 }
@@ -97,41 +119,45 @@ body {
 
 .grid5 {
   grid-area: 7/3/11/5;
-  background-color: lightpink;
+  background-color: #E84393;
   border-radius: 16px;
 }
 
 .grid6 {
   grid-area: 7/5/12/7;
-  background-color: lavender;
+  background-color: #6c5ce7;
   border-radius: 16px;
+  color: white;
 }
 
 .grid7 {
   grid-area: 4/6/7/7;
-  background-color: coral;
+  background-color: #A29BFE;
   border-radius: 16px;
 }
 
 .grid8 {
   grid-area: 4/7/7/8;
-  background-color: teal;
+  background-color: #0984E3;
+  background-image: url("/assets/images/shoe.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 16px;
 }
 
 .grid9 {
   grid-area: 7/7/10/8;
-  background-color: lightsalmon;
+  background-color: #FF7675;
   border-radius: 16px;
 }
 
 .grid10 {
   grid-area: 2/6/4/8;
-  background-color: palevioletred;
   border-radius: 16px;
+  text-align: left;
 }
 
-/* PRICING */
 .pricing-card {
   border-radius: 16px;
   padding: 24px;
@@ -143,16 +169,76 @@ body {
   font-size: 0.9rem;
 }
 
+.pricing-card img {
+  padding-right: 10px;
+}
+
 .pricing-card.featured {
   transform: scale(1.02);
 }
 
-/* FOOTER */
-.footer-section {
-  background: #fafafa;
+.features-section h4 {
+  font-size: 32px;
+  font-weight: bolder;
+  line-height: 35px;
 }
 
-/* RESPONSIVE TWEAKS */
+.features-section .text-muted {
+  padding-right: 20px;
+  line-height: 25px;
+}
+
+#features-blurb {
+  font-size: 24px;
+  padding-right: 100px;
+}
+
+.feature-button {
+  width: 130px;
+  height: 42px;
+  border: 1px #ADADAD solid;
+  border-radius: 15px;
+  background: none;
+  color: #6c5ce7;
+  font-weight: bolder;
+}
+
+.feature-button:hover {
+  background-color: #6c5ce7;
+  color: white;
+}
+
+.feature-icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+#support-icon {
+  background-color: #E84393;
+}
+
+#sales-icon {
+  background-color: #0984E3;
+}
+
+#components-icon {
+  background-color: #6c5ce7;
+}
+
+#swap-icon {
+  background-color: #00B894;
+}
+
+.footer-section {
+  background-image: url("/assets/images/Wave.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+
 @media (min-width: 768px) {
   .grid-item {
     min-height: 120px;

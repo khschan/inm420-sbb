@@ -24,14 +24,17 @@
       <img src="assets/images/gridlogo.svg"></img>Grid</a>
 
     <div id="navMenu" class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3">
-        <li class="nav-item"><a class="nav-link" href="#">How it works</a></li>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-3 d-flex align-items-center">
+        <li class="nav-item"><a class="nav-active" href="#">How it works</a></li>
+        <li class="nav-breaker">•</li>
         <li class="nav-item"><a class="nav-link" href="#">Who we are</a></li>
+        <li class="nav-breaker">•</li>
         <li class="nav-item"><a class="nav-link" href="#">What we do</a></li>
+        <li class="nav-breaker">•</li>
         <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
       </ul>
     </div>
-    <a href="#" class="btn btn-dark ms-lg-3">Sign in</a>
+    <a href="#" class="btn btn-dark ms-lg-3 d-flex align-items-center" id="signin-button">Sign In</a>
   </div>
 </nav>
 
@@ -48,13 +51,13 @@
             <figure class="grid1"><small>Using mixed grid with imagery, replace with your own photos and descriptions</small></figure>
             <figure class="grid2"><div class="shadow bg-white grid-button"><h3><b>Learn more</b></h3></div></figure>
             <figure class="grid3"><small><b>We aimed to deliver HQ templates for Figma</b><br>Used by 123 people</small></figure>
-            <figure class="grid4"><h2><b>Image Title</b></h2></figure>
+            <figure class="grid4 d-flex align-items-center"><h2><b>Image Title</b></h2></figure>
             <figure class="grid5"></figure>
-            <figure class="grid6"></figure>
+            <figure class="grid6 d-flex align-items-center"><h2><b>Caption</b></h2></figure>
             <figure class="grid7"></figure>
             <figure class="grid8"></figure>
             <figure class="grid9"></figure>
-            <figure class="grid10"></figure>
+            <figure class="grid10 d-flex align-items-end"><small>This is multipurpose grid, it fits for portfolio, services or agency web site</small></figure>
           </article>
         </div>
       </div>
@@ -75,9 +78,9 @@
           <h5>Personal</h5>
           <h3 class="fw-bold">Free <small>/ FOREVER</small></h3>
           <ul class="list-unstyled mt-3">
-            <li><img src="assets/images/check-grey.svg"></img>Components-driven system</li>
-            <li><img src="assets/images/check-grey.svg"></img>Sales-boosting landing pages</li>
-            <li><img src="assets/images/check-grey.svg"></img>Awesome Feather icons pack</li>
+            <li><img src="assets/images/check-grey.svg"/>Components-driven system</li>
+            <li><img src="assets/images/check-grey.svg"/>Sales-boosting landing pages</li>
+            <li><img src="assets/images/check-grey.svg"/>Awesome Feather icons pack</li>
           </ul>
           <button class="btn btn-outline-secondary w-100">Try for free</button>
         </div>
@@ -86,14 +89,14 @@
       <!-- Individual -->
       <div class="col-md-4">
         <div class="pricing-card shadow featured">
-          <h5>Individual</h5>
+          <h5>👤 Individual</h5>
           <h3 class="fw-bold">$24 <small>/ MONTH</small></h3>
           <ul class="list-unstyled mt-3">
-            <li><img src="assets/images/check-gold.svg"></img>Components-driven system</li>
-            <li><img src="assets/images/check-gold.svg"></img>Sales-boosting landing pages</li>
-            <li><img src="assets/images/check-gold.svg"></img>Awesome Feather icons pack</li>
-            <li><img src="assets/images/check-gold.svg"></img>Themed into 3 different styles</li>
-            <li><img src="assets/images/check-gold.svg"></img>Will help to learn Figma</li>
+            <li><img src="assets/images/check-gold.svg"/>Components-driven system</li>
+            <li><img src="assets/images/check-gold.svg"/>Sales-boosting landing pages</li>
+            <li><img src="assets/images/check-gold.svg"/>Awesome Feather icons pack</li>
+            <li><img src="assets/images/check-gold.svg"/>Themed into 3 different styles</li>
+            <li><img src="assets/images/check-gold.svg"/>Will help to learn Figma</li>
           </ul>
           <button class="btn btn-primary w-100">Regular license</button>
         </div>
@@ -102,13 +105,13 @@
       <!-- Corporate -->
       <div class="col-md-4">
         <div class="pricing-card">
-          <h5>Corporate</h5>
+          <h5>👥 Corporate</h5>
           <h3 class="fw-bold">$12 <small>/ EDITOR</small></h3>
           <ul class="list-unstyled mt-3">
-            <li><img src="assets/images/check-green.svg"></img>Components-driven system</li>
-            <li><img src="assets/images/check-green.svg"></img>Sales-boosting landing pages</li>
-            <li><img src="assets/images/check-green.svg"></img>Awesome Feather icons pack</li>
-            <li><img src="assets/images/check-green.svg"></img>Themed into 3 different styles</li>
+            <li><img src="assets/images/check-green.svg"/>Components-driven system</li>
+            <li><img src="assets/images/check-green.svg"/>Sales-boosting landing pages</li>
+            <li><img src="assets/images/check-green.svg"/>Awesome Feather icons pack</li>
+            <li><img src="assets/images/check-green.svg"/>Themed into 3 different styles</li>
           </ul>
           <button class="btn btn-outline-secondary w-100">Extended license</button>
         </div>
@@ -121,27 +124,31 @@
 <section class="features-section py-5">
   <div class="container">
     <div class="row g-4 text-left">
-      <h4>Delivering good designs since 1954</h4>
-      <p>We're the first multipurpose design kit solutions for business. We help you bridge gaps between your layouts, templates and developers to empower all involved.</p>
+      <h4>Delivering good designs since 1954 🚚💨</h4>
+      <p id="features-blurb">We're the first multipurpose design kit solutions for business. We help you bridge gaps between your layouts, templates and developers to empower all involved.</p>
       <div class="col-md-3">
-        <h6 class="fw-bold">Support</h6>
+        <img src="/assets/images/icon-phone-call.svg" alt="ringing phone icon" class="feature-icon" id="support-icon"/>
+        <h5 class="fw-bold">Support</h5>
         <p class="text-muted">Delivering faster and more personalized support with shared screens and cool design systems for Figma.</p>
-        <button class="btn btn-outline-secondary w-100">Learn more</button>
+        <button class="feature-button">Learn more</button>
       </div>
       <div class="col-md-3">
-        <h6 class="fw-bold">Sales growth</h6>
+        <img src="/assets/images/icon-pie-chart.svg" alt="pie chart icon" class="feature-icon" id="sales-icon"/>
+        <h5 class="fw-bold">Sales growth</h5>
         <p class="text-muted">Identify qualified customers with easy-to-use live chat messaging and AI-based Sales Bot.</p>
-        <button class="btn btn-outline-secondary w-100">Learn more</button>
+        <button class="feature-button">Learn more</button>
       </div>
       <div class="col-md-3">
-        <h6 class="fw-bold">Components-driven</h6>
+        <img src="/assets/images/icon-zap.svg" alt="lightning bolt icon" class="feature-icon" id="components-icon"/>
+        <h5 class="fw-bold">Components-driven</h5>
         <p class="text-muted">Delivering faster and more personalized support with shared screens and cool design systems for Figma.</p>
-        <button class="btn btn-outline-secondary w-100">Learn more</button>
+        <button class="feature-button">Learn more</button>
       </div>
       <div class="col-md-3">
-        <h6 class="fw-bold">Swap the icon</h6>
+        <img src="/assets/images/icon-thumbs-up.svg" alt="thumbs up icon" class="feature-icon" id="swap-icon"/>
+        <h5 class="fw-bold">Swap the icon</h5>
         <p class="text-muted">You can toggle to any icon within instances and customize outlined stroke to more bolder or lighter.</p>
-        <button class="btn btn-outline-secondary w-100">Learn more</button>
+        <button class="feature-button">Learn more</button>
       </div>
     </div>
   </div>
@@ -149,7 +156,6 @@
 
 <!-- FOOTER -->
 <footer class="footer-section pt-5 pb-4">
-  <figure class="footer-bg"></figure>
   <div class="container text-left">
     <div class="row gy-4 align-items-start">
       <!-- SOCIAL LINKS -->
