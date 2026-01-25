@@ -2,6 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 body {
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+#bg-img {
+  position: absolute;
+  background-color: #FFEAA7;
+  opacity: 0.5;
+  transform: translateX(47%) translateY(-55%) rotate(-45deg);
+  border-radius: 99px;
+  width: 1376px;
+  height: 768px;
+  z-index: -1;
 }
 
 .navbar {
@@ -25,37 +37,62 @@ body {
 }
 
 /* HERO GRID */
+.hero-section {
+  width: 100vw;
+  height: 70vh;
+}
+
 .gallery-grid {
   display: grid;
+  height: 55vh;
+  min-width: 700px;
+  max-width: 100vw;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(12, 1fr);
   grid-column-gap: 14px;
-  grid-row-gap: 14px;
+  margin-bottom: 2vh;
 }
 
 /* GRID AREAS */
 .grid1 {
   grid-area: 1/1/3/3;
-  background-color: grey;
+  height: 80px;
   border-radius: 16px;
+  margin: 10px;
+  color: black;
+  text-align: left;
 }
 
 .grid2 {
   grid-area: 10/1/11/3;
-  background-color: yellow;
-  border-radius: 16px;
+  margin: 10px;
+  align-items: center;
+}
+
+.grid-button {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  color: #6C5CE7;
+  align-items: center;
 }
 
 .grid3 {
   grid-area: 3/1/10/3;
-  background-color: yellowgreen;
+  background-color: #FDCB6E;
   border-radius: 16px;
+  height: 100%;
+}
+
+.grid3 > small {
+  margin: 10px;
 }
 
 .grid4 {
   grid-area: 1/3/7/6;
-  background-color: lightblue;
+  background-color: #00B894;
   border-radius: 16px;
+  color: white;
 }
 
 .grid5 {
