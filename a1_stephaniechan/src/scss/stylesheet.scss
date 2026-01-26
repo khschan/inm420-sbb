@@ -33,6 +33,7 @@ body {
   z-index: -1;
 }
 
+// NAVIGATION BAR
 .navbar {
   position: sticky;
   top: 0;
@@ -79,6 +80,7 @@ body {
   border-radius: 25px;
 }
 
+// HERO SECTION GENERAL
 .hero-section {
   margin-top: 50px;
 }
@@ -232,7 +234,7 @@ body {
   text-align: left;
 }
 
-// PRICING
+// PRICING SECTION
 .pricing-section h1 {
   font-size: 64px;
 }
@@ -257,8 +259,6 @@ body {
   border-radius: 8px;
   z-index: -1;
 }
-
-
 
 .pricing-card {
   display: flex;
@@ -303,7 +303,6 @@ body {
   font-size: 0.9rem;
 }
 
-
 .wiggle-pattern {
   content: '';
   background-image: url("/assets/images/purplewiggle.svg");
@@ -336,7 +335,7 @@ body {
   font-size: 20px;
 }
 
-// FEATURES
+// FEATURES SECTION
 .features-section {
   margin-top: 50px;
 }
@@ -398,7 +397,8 @@ body {
 #swap-icon {
   background-color: $green-dark;
 }
-// FOOTER
+
+// FOOTER SECTION
 .footer-section {
   background-image: url("/assets/images/Wave.svg");
   background-size: contain;
@@ -416,15 +416,18 @@ body {
   margin-bottom: 10px;
 }
 
+// FOOTER SOCIALS
 .social-links img {
   height: 40px;
   width: 40px;
   margin-right: 20px;
 }
 
+// SITEMAP LINKS
 .info-links {
   margin-bottom: 150px;
 }
+
 .footer-links a {
   font-size: 10px;
   color: black;
@@ -442,6 +445,7 @@ body {
   color: $purple-dark;
 }
 
+// STYLING FORM FIELDS
 .contact-form {
   padding-left: 35px;
   margin-top: 0;
@@ -480,20 +484,23 @@ body {
 
   margin-left: 5px;
 }
+
 // RESPONSIVE TWEAKS
 @media (min-width: 768px) {
   .grid-item {
     min-height: 120px;
   }
 
+// COLLAPSE NAV ON MOBILE
   #navMenu {
   display: flex;
   justify-content: center;
   }
 }
 
+// HIDE CONTACT FORM ON MOBILE
 @media only screen and (max-width: 768px) {
-  .footer-section {
+  .contact-form {
     display: none;
   }
 }
