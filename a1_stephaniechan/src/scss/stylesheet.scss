@@ -406,6 +406,80 @@ body {
   background-position-y: bottom;
 }
 
+.footer-section p {
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: $grey-light;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.social-links img {
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+}
+
+.info-links {
+  margin-bottom: 150px;
+}
+.footer-links a {
+  font-size: 10px;
+  color: black;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  color: $purple-dark;
+}
+
+.email > h4 {
+  font-weight: bold;
+  color: $purple-dark;
+}
+
+.contact-form {
+  padding-left: 35px;
+  margin-top: 0;
+}
+
+.contact-form input {
+  border-radius: 10px;
+  background-color: #dfdfdf91;
+
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+.contact-form textarea {
+  border-radius: 10px;
+  background-color: #dfdfdf91;
+
+  resize: none;
+}
+
+.contact-form textarea:focus, input:focus {
+  background-color: #dfdfdf91;
+}
+.contact-form textarea:focus::placeholder, input:focus::placeholder {
+  color: $purple-dark;
+  font-weight: bold;
+}
+
+.contact-form #send-button {
+  border: none;
+  background-color: $purple-dark;
+  color: white;
+  
+  height: 62px;
+  width: 165px;
+
+  margin-left: 5px;
+}
 // RESPONSIVE TWEAKS
 @media (min-width: 768px) {
   .grid-item {
@@ -415,5 +489,11 @@ body {
   #navMenu {
   display: flex;
   justify-content: center;
+  }
 }
+
+@media only screen and (max-width: 768px) {
+  .footer-section {
+    display: none;
+  }
 }
