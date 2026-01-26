@@ -17,8 +17,8 @@ body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
   background-image: url("/assets/images/dots.svg");
-  background-position: top right;
-  background-size: 300px auto;
+  background-position: (100% 3%);
+  background-size: 200px auto;
   background-repeat: no-repeat;
 }
 
@@ -26,7 +26,7 @@ body {
   position: absolute;
   background-color: #ffeaa7;
   opacity: 0.5;
-  transform: translateX(43vw) translateY(-45vh) rotate(-45deg);
+  transform: translateX(39vw) translateY(-43vh) rotate(-45deg);
   border-radius: 99px;
   width: 1200px;
   height: 750px;
@@ -38,6 +38,11 @@ body {
   top: 0;
   z-index: 1;
 }
+
+.navbar-brand {
+  font-size: 36px;
+}
+
 .nav-link {
   color: #6c5ce7;
 }
@@ -55,7 +60,7 @@ body {
 
 .nav-breaker {
   color: $yellow-dark;
-  line-height: 250%;
+  margin-right: 35px;
 }
 
 #signin-button {
@@ -74,6 +79,9 @@ body {
   border-radius: 25px;
 }
 
+.hero-section {
+  margin-top: 50px;
+}
 .hero-section h1 {
   font-size: 96px;
   font-weight: bolder;
@@ -403,4 +411,9 @@ body {
   .grid-item {
     min-height: 120px;
   }
+
+  #navMenu {
+  display: flex;
+  justify-content: center;
+}
 }
