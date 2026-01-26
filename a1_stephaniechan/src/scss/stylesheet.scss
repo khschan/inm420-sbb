@@ -11,6 +11,7 @@ $yellow-dark: #fdcb6e;
 $pink-dark: #E84393;
 $blue-dark: #0984E3;
 $green-dark: #00B894;
+$grey-light: #ADADAD;
 
 body {
   font-family: "Inter", sans-serif;
@@ -35,8 +36,8 @@ body {
 .navbar {
   position: sticky;
   top: 0;
+  z-index: 1;
 }
-
 .nav-link {
   color: #6c5ce7;
 }
@@ -58,27 +59,53 @@ body {
 }
 
 #signin-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   font-weight: bolder;
+  font-size: 18px;
   line-height: 24px;
   text-align: center;
   
   height: 50px;
-  width: 130px;
+  width: 135px;
 
   border-radius: 25px;
 }
 
-.text-highlight {
-  background: #d7f5ec;
-  color: $green-dark;
-  padding: 0 6px;
-  border-radius: 6px;
+.hero-section h1 {
+  font-size: 96px;
+  font-weight: bolder;
+  text-shadow: white 0px 5px;
+}
+
+.title-highlight {
+  color: $pink-dark;
+}
+
+.title-highlight::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transform: translate(-180px, 70px);
+  background-color: #55EFC4;
+  height: 50px;
+  width: 195px;
+  border-radius: 25px;
+}
+
+.hero-subhead {
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  font-size: 64px;
+  font-weight: bolder;
 }
 
 // HERO GRID
 .hero-section {
   width: 100vw;
-  height: 70vh;
 }
 
 .gallery-grid {
@@ -88,8 +115,11 @@ body {
   max-width: 100vw;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  grid-column-gap: 14px;
-  margin-bottom: 2vh;
+  column-gap: 14px;
+}
+
+.gallery-grid p {
+  font-size: 18px;
 }
 
 // GRID AREAS
@@ -105,15 +135,20 @@ body {
 .grid2 {
   grid-area: 10 / 1 / 11 / 3;
   margin: 10px;
+  padding-top: 10px;
   align-items: center;
 }
 
 .grid-button {
-  width: 100%;
-  height: 50px;
-  border-radius: 25px;
-  color: $purple-dark;
+  display: flex;
+  justify-content: center;
   align-items: center;
+
+  width: 100%;
+  height: 70px;
+  border-radius: 35px;
+
+  color: $purple-dark;
 }
 
 .grid3 {
@@ -123,16 +158,24 @@ body {
   height: 100%;
 }
 
-.grid3 > small {
-  margin: 10px;
+.grid3 > p {
+  margin: auto;
+  padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
 }
 
 .grid4 {
   grid-area: 1 / 3 / 7 / 6;
   background-color: $green-dark;
   border-radius: 16px;
-
+  
   color: white;
+}
+
+.grid4 > h2 {
+  margin: auto;
 }
 
 .grid5 {
@@ -147,6 +190,10 @@ body {
   border-radius: 16px;
 
   color: white;
+}
+
+.grid6 > h2 {
+  margin: auto;
 }
 
 .grid7 {
@@ -178,26 +225,114 @@ body {
 }
 
 // PRICING
-.pricing-card {
-  border-radius: 16px;
-  padding: 24px;
-  height: 100%;
+.pricing-section h1 {
+  font-size: 64px;
 }
 
+.pricing-section h4 {
+  font-size: 32px;
+  font-weight: bolder;
+  color: $grey-light;
+}
+
+.billing-active {
+  color: $purple-dark;
+}
+
+.billing-active::after {
+  content: '';
+  position: absolute;
+  transform: translate(-120px, 25px);
+  background-color: $yellow-dark;
+  height: 15px;
+  width: 120px;
+  border-radius: 8px;
+  z-index: -1;
+}
+
+
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: 16px;
+  padding: 24px;
+
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+
+  background-color: white;
+}
+
+.pricing-card h6 {
+  color: $purple-dark;
+  font-weight: bolder;
+}
+
+.pricing-card h3 {
+  font-size: 48px;
+  width: fit-content;
+  padding-right: 0;
+}
+
+.pricing-card p {
+  width: fit-content;
+  font-size: 12px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.pricing-card img {
+  margin: 10px;
+  height: 30px;
+  width: 30px;
+}
 .pricing-card ul li {
   margin-bottom: 8px;
   font-size: 0.9rem;
 }
 
-.pricing-card img {
-  padding-right: 10px;
+
+.wiggle-pattern {
+  content: '';
+  background-image: url("/assets/images/purplewiggle.svg");
+  position: absolute;
+  z-index: -1;
+
+  width: 200px;
+  height: 120px;
+
+  transform: translate(-30px, -95px);
 }
 
-.pricing-card.featured {
-  transform: scale(1.02);
+.pricing-button {
+  min-width: 96%;
+  max-width: 300px;
+  height: 55px;
+
+  border: 1px $grey-light solid;
+  border-radius: 15px;
+  background: none;
+
+  color: $purple-dark;
+  font-weight: bolder;
+}
+
+.pricing-active {
+  background-color: $purple-dark;
+  border: none;
+  color: white;
+  font-size: 20px;
 }
 
 // FEATURES
+.features-section {
+  margin-top: 50px;
+}
+
 .features-section h4 {
   font-size: 32px;
   font-weight: bolder;
@@ -218,7 +353,7 @@ body {
   width: 130px;
   height: 42px;
   
-  border: 1px #ADADAD solid;
+  border: 1px $grey-light solid;
   border-radius: 15px;
   background: none;
 
