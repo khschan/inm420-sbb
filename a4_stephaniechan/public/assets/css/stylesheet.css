@@ -1,0 +1,25 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+
+h1 {
+  color: #6f42c1;
+}
+
+#result {
+  border-left: 6px solid #6f42c1;
+  background-color: #fff;
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  transition: all 0.4s ease;
+}
+#result h4 {
+  text-transform: capitalize;
+  color: #6f42c1;
+}
+#result.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/*# sourceMappingURL=stylesheet.css.map */
